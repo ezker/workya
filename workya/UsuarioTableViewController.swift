@@ -11,7 +11,7 @@ import UIKit
 class UsuarioTableViewController: UITableViewController {
     
     var users : [ User ] = [
-        User( name: "Carlos", lastName: "Bravo Jimenez", picture : "avatar01", city : "Guadalajara, Jalisco", schedule: "09:00 a 18:00",  score: 4.5,
+        User( name: "Carlos", lastName: "Bravo Jimenez", picture : "avatar02", city : "Guadalajara, Jalisco", schedule: "09:00 a 18:00",  score: 4.5,
               comments: ["Lorem ipsum dolor sit amet, consectetur adipi",
                          "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum"],
               services: ["Fontanería","Servicios eléctricos"],
@@ -21,7 +21,7 @@ class UsuarioTableViewController: UITableViewController {
         User( name: "Fernanda", lastName: "Godínez Nuño", picture : "avatar03", city : "Zapopan, Jalisco", schedule: "",  score: 4.5, comments: ["",""], services: ["Mécanica"], portfolio: ["","",""],
               descripcion: ""),
         
-        User( name: "Joaquin", lastName: "Perez Beltran", picture : "avatar02", city : "Guadalajara, Jalisco", schedule: "",  score: 4.5, comments: ["",""], services: ["Jardinero"], portfolio: ["","",""],
+        User( name: "Joaquin", lastName: "Perez Beltran", picture : "avatar01", city : "Guadalajara, Jalisco", schedule: "",  score: 4.5, comments: ["",""], services: ["Jardinero"], portfolio: ["","",""],
               descripcion: ""),
     ]
     
