@@ -308,27 +308,6 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="7Wh-nr-udS">
-                                                <rect key="frame" x="8" y="395" width="359" height="128"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="GR7-tm-57H">
-                                                    <size key="itemSize" width="50" height="50"/>
-                                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
-                                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                                </collectionViewFlowLayout>
-                                                <cells>
-                                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="UTB-88-5Lw">
-                                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
-                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
-                                                            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
-                                                            <autoresizingMask key="autoresizingMask"/>
-                                                        </view>
-                                                    </collectionViewCell>
-                                                </cells>
-                                            </collectionView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Galeria de trabajo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3rR-Rm-KNP">
                                                 <rect key="frame" x="27" y="366" width="135" height="21"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -351,10 +330,50 @@
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                             </textView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UnT-Yo-4mj">
+                                                <rect key="frame" x="0.0" y="395" width="320" height="80"/>
+                                                <subviews>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fontanero04" translatesAutoresizingMaskIntoConstraints="NO" id="RVb-xH-Kcs">
+                                                        <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="80" id="PW0-aX-gmF"/>
+                                                        </constraints>
+                                                    </imageView>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fontanero01" translatesAutoresizingMaskIntoConstraints="NO" id="Jfd-1v-QY4">
+                                                        <rect key="frame" x="80" y="0.0" width="80" height="80"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="80" id="WYV-Ti-YeN"/>
+                                                            <constraint firstAttribute="height" constant="80" id="zo1-FC-mx8"/>
+                                                        </constraints>
+                                                    </imageView>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fontanero02" translatesAutoresizingMaskIntoConstraints="NO" id="Ykd-Jw-Ml3">
+                                                        <rect key="frame" x="160" y="0.0" width="80" height="80"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="80" id="4eV-M8-nTy"/>
+                                                            <constraint firstAttribute="width" constant="80" id="w8g-Nn-dmG"/>
+                                                        </constraints>
+                                                    </imageView>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fontanero03" translatesAutoresizingMaskIntoConstraints="NO" id="W9t-jw-fJa">
+                                                        <rect key="frame" x="240" y="0.0" width="80" height="80"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="80" id="Euh-T5-qRZ"/>
+                                                            <constraint firstAttribute="height" constant="80" id="RuK-jX-Vfj"/>
+                                                            <constraint firstAttribute="width" constant="80" id="SS6-WH-rAq"/>
+                                                        </constraints>
+                                                    </imageView>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstItem="Ykd-Jw-Ml3" firstAttribute="leading" secondItem="Jfd-1v-QY4" secondAttribute="trailing" constant="15" id="HI1-ZH-SLJ"/>
+                                                    <constraint firstItem="W9t-jw-fJa" firstAttribute="leading" secondItem="Ykd-Jw-Ml3" secondAttribute="trailing" constant="15" id="SEp-ai-uRc"/>
+                                                    <constraint firstItem="RVb-xH-Kcs" firstAttribute="leading" secondItem="UnT-Yo-4mj" secondAttribute="leading" constant="15" id="itX-Td-dTd"/>
+                                                </constraints>
+                                            </stackView>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstAttribute="trailing" secondItem="lj6-UT-muG" secondAttribute="trailing" constant="25" id="E0E-Su-Vo8"/>
+                                            <constraint firstItem="UnT-Yo-4mj" firstAttribute="leading" secondItem="X9g-Pk-5za" secondAttribute="leading" constant="20" id="Lhg-mT-Wq2"/>
+                                            <constraint firstItem="UnT-Yo-4mj" firstAttribute="leading" secondItem="X9g-Pk-5za" secondAttribute="leading" constant="20" id="NIa-Ff-1kt"/>
                                             <constraint firstItem="lj6-UT-muG" firstAttribute="leading" secondItem="X9g-Pk-5za" secondAttribute="leading" constant="25" id="rh5-Kq-h0l"/>
                                         </constraints>
                                     </view>
@@ -391,7 +410,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sSI-6e-8rf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1558" y="856"/>
+            <point key="canvasLocation" x="1557.5999999999999" y="855.9220389805098"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="S7h-tF-Oaw">
@@ -413,6 +432,10 @@
     <resources>
         <image name="avatar01" width="236" height="314"/>
         <image name="contact" width="491.51998901367188" height="491.51998901367188"/>
+        <image name="fontanero01" width="312" height="207.83999633789062"/>
+        <image name="fontanero02" width="281" height="180"/>
+        <image name="fontanero03" width="630" height="400"/>
+        <image name="fontanero04" width="289" height="174"/>
         <image name="mic" width="512" height="512"/>
     </resources>
 </document>
