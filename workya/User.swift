@@ -19,6 +19,7 @@ struct User {
     var comments: [String]
     var services: [String]
     var portfolio: [String]
+    var descripcion: String
     
     
 }

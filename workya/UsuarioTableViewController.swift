@@ -15,8 +15,10 @@ class UsuarioTableViewController: UITableViewController {
               comments: ["Lorem ipsum dolor sit amet, consectetur adipi",
                          "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum"],
               services: ["Fontanería"],
-              portfolio: ["","",""]  ),
-        User( name: "Nombre", lastName: "Apellidos", picture : "", city : "", schedule: "",  score: 4.5, comments: ["",""], services: [""], portfolio: ["","",""]  )
+              portfolio: ["","",""],
+              descripcion: "Soy un hombre emprendedor con sueños y metas en esta vida, amo mi trabajo y me gustaria tener mi propia tienda distribuidora de productos de fontanería."),
+        User( name: "Nombre", lastName: "Apellidos", picture : "", city : "", schedule: "",  score: 4.5, comments: ["",""], services: [""], portfolio: ["","",""],
+              descripcion: "")
     ]
     
     override func viewDidLoad() {
