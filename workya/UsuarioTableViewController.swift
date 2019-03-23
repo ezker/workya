@@ -14,11 +14,14 @@ class UsuarioTableViewController: UITableViewController {
         User( name: "Carlos", lastName: "Bravo Jimenez", picture : "", city : "Guadalajara, Jalisco", schedule: "09:00 a 18:00",  score: 4.5,
               comments: ["Lorem ipsum dolor sit amet, consectetur adipi",
                          "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum"],
-              services: ["Fontanería"],
+              services: ["Fontanería","Servicios eléctricos"],
               portfolio: ["","",""],
               descripcion: "Soy un hombre emprendedor con sueños y metas en esta vida, amo mi trabajo y me gustaria tener mi propia tienda distribuidora de productos de fontanería."),
-        User( name: "Nombre", lastName: "Apellidos", picture : "", city : "", schedule: "",  score: 4.5, comments: ["",""], services: [""], portfolio: ["","",""],
-              descripcion: "")
+        User( name: "Fernanda", lastName: "Godínez Nuño", picture : "", city : "Zapopan, Jalisco", schedule: "",  score: 4.5, comments: ["",""], services: ["Mécanica"], portfolio: ["","",""],
+              descripcion: ""),
+        
+        User( name: "Carlos", lastName: "Perez Beltran", picture : "", city : "Guadalajara, Jalisco", schedule: "",  score: 4.5, comments: ["",""], services: ["Jardinero"], portfolio: ["","",""],
+              descripcion: ""),
     ]
     
     override func viewDidLoad() {
@@ -40,7 +43,7 @@ class UsuarioTableViewController: UITableViewController {
         //cell.pictureImageView = user.picture
         //cell.nameLabel.text = String(indexPath.row)
         //cell.textLabel?.text = String(indexPath.row)//user.name + " " + user.lastName
-        cell.nameLabel.text = user.name
+        cell.nameLabel.text = user.name + " " + user.lastName
         cell.servicesLabel.text = user.services.joined(separator: ", ")
         
         return cell
