@@ -99,6 +99,9 @@
                                 <rect key="frame" x="137" y="186" width="100" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="mic"/>
+                                <connections>
+                                    <segue destination="UkB-cp-vfg" kind="show" id="8Vu-Hj-ogH"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MzI-j3-rB3">
                                 <rect key="frame" x="133" y="362" width="108" height="105"/>
@@ -132,7 +135,7 @@
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="pEz-4J-YUt">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="0.78068820000000005" green="0.9142607868" blue="0.86173341429999994" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="71" id="9wl-VQ-XwD" customClass="UserTableViewCell" customModule="workya" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="375" height="71"/>
@@ -256,9 +259,6 @@
                                                                         <state key="normal" title=" 📞 Llamar">
                                                                             <color key="titleColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                         </state>
-                                                                        <connections>
-                                                                            <segue destination="HN7-ep-bvm" kind="show" id="ocx-KE-JNS"/>
-                                                                        </connections>
                                                                     </button>
                                                                 </subviews>
                                                                 <constraints>
@@ -436,8 +436,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="O6M-Az-gE1">
-                                <rect key="frame" x="67" y="191" width="240" height="222"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="calling" translatesAutoresizingMaskIntoConstraints="NO" id="O6M-Az-gE1">
+                                <rect key="frame" x="67" y="170" width="240" height="243"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
@@ -468,6 +468,7 @@
     </scenes>
     <resources>
         <image name="avatar02" width="640" height="470"/>
+        <image name="calling" width="213" height="235"/>
         <image name="contact" width="491.51998901367188" height="491.51998901367188"/>
         <image name="fontanero01" width="312" height="207.83999633789062"/>
         <image name="fontanero02" width="281" height="180"/>
@@ -475,4 +476,7 @@
         <image name="fontanero04" width="289" height="174"/>
         <image name="mic" width="512" height="512"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="8Vu-Hj-ogH"/>
+    </inferredMetricsTieBreakers>
 </document>
