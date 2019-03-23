@@ -11,6 +11,7 @@ import UIKit
 class DetailUserViewController: UIViewController {
     
     @IBOutlet weak var nameLabel: UILabel!
+    @IBOutlet weak var avatarImage: UIImageView!
     @IBOutlet weak var cityLabel: UILabel!
     @IBOutlet weak var scoreLabel: UILabel!
     

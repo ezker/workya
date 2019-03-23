@@ -9,12 +9,15 @@
 import UIKit
 
 class UsuarioTableViewController: UITableViewController {
-
-    @IBOutlet weak var pictureImageView: UIImageView!
-    @IBOutlet weak var nameLabel: UILabel!
-    @IBOutlet weak var servicesLabel: UILabel!
     
-    var users: [String] = []
+    var users : [ User ] = [
+        User( name: "Carlos", lastName: "Bravo Jimenez", picture : "", city : "Guadalajara, Jalisco", schedule: "09:00 a 18:00",  score: 4.5,
+              comments: ["Lorem ipsum dolor sit amet, consectetur adipi",
+                         "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum"],
+              services: ["Fontanería"],
+              portfolio: ["","",""]  ),
+        User( name: "Nombre", lastName: "Apellidos", picture : "", city : "", schedule: "",  score: 4.5, comments: ["",""], services: [""], portfolio: ["","",""]  )
+    ]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,9 +35,11 @@ class UsuarioTableViewController: UITableViewController {
         let user = users[indexPath.row]
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! UserTableViewCell
-        /*cell.pic = user.picture
-        cell.nameLabel.text = user.name + user.lastName
-        cell.servicesLabel.text = user.servicios*/
+        //cell.pictureImageView = user.picture
+        //cell.nameLabel.text = String(indexPath.row)
+        //cell.textLabel?.text = String(indexPath.row)//user.name + " " + user.lastName
+        cell.nameLabel.text = user.name
+        cell.servicesLabel.text = user.services.joined(separator: ", ")
         
         return cell
         
