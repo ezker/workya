@@ -18,10 +18,10 @@ class UsuarioTableViewController: UITableViewController {
               portfolio: ["","",""],
               descripcion: "Soy un hombre emprendedor con sueños y metas en esta vida, amo mi trabajo y me gustaria tener mi propia tienda distribuidora de productos de fontanería."),
         
-        User( name: "Fernanda", lastName: "Godínez Nuño", picture : "avatar03", city : "Zapopan, Jalisco", schedule: "",  score: 4.5, comments: ["",""], services: ["Mécanica"], portfolio: ["","",""],
+        User( name: "Fernanda", lastName: "Godínez Nuño", picture : "avatar03", city : "Zapopan, Jalisco", schedule: "",  score: 4.5, comments: ["",""], services: ["Fontanería"], portfolio: ["","",""],
               descripcion: ""),
         
-        User( name: "Joaquin", lastName: "Perez Beltran", picture : "avatar01", city : "Guadalajara, Jalisco", schedule: "",  score: 4.5, comments: ["",""], services: ["Jardinero"], portfolio: ["","",""],
+        User( name: "Joaquin", lastName: "Perez Beltran", picture : "avatar01", city : "Guadalajara, Jalisco", schedule: "",  score: 4.5, comments: ["",""], services: ["Jardinero","Fontanería"], portfolio: ["","",""],
               descripcion: ""),
     ]
     

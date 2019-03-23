@@ -36,6 +36,8 @@
 	</array>
 	<key>NSMicrophoneUsageDescription</key>
 	<string>Conceder permiso para uso de microfono</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>Conceder permiso para ubicación</string>
 	<key>NSSpeechRecognitionUsageDescription</key>
 	<string>Conceder permiso para reconocimiento de voz</string>
 	<key>UISupportedInterfaceOrientations~ipad</key>
